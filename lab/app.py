@@ -19,4 +19,9 @@ def add_student_route():
 			request.form['student_year'], False)
 		return render_template('add.html')
 
+@app.route('/delete/<student_id>', methods=['POST'])
+def dele():
+	print(query_all())
+    return render_template(delete_student("student"))
+
 app.run(debug=True)
