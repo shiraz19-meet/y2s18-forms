@@ -1,3 +1,7 @@
 body {
     background: #fcfcfc;
 }
+
+#content{
+	background-color: pink;
+}

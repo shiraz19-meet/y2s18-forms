@@ -6,11 +6,11 @@
 </head>
 <body> 
 	
-	<form action ="/delete/<student_id>" method="POST">
+	<form action ="/delete/{{student.student_id}}" method="POST">
 		<input type="submit" value="delete">
 	</form>
 
-
+	
     <h1>{{ student.name }}</h1>
 	<p>
 	Student Id: {{student.student_id}}<br>

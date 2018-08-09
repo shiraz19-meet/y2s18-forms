@@ -8,7 +8,7 @@
     <h1>Welcome to the home page!</h1>
     
     <hr>
-    
+    <div id="content">
     {% for student in students %}
     <p>
 	    Name: <a href="{{url_for('display_student', student_id=student.student_id)}}">{{student.name}}</a><br>
@@ -16,6 +16,6 @@
 	    Finished Lab: {{student.finished_lab}}
     </p>
     {% endfor %}
-
+    </div>
 </body>
 </html>
